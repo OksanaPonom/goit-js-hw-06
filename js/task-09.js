@@ -13,8 +13,9 @@ const textEl=document.querySelector('.color')
 
 buttonEl.addEventListener('click', onButtonClick);
 function onButtonClick() {
+  const color=getRandomHexColor();
   textEl.textContent = '-';
-  bodyEl.style.backgroundColor = getRandomHexColor();
-  textEl.textContent += getRandomHexColor();
+  bodyEl.style.backgroundColor = color;
+  textEl.textContent += color;
 
 }
